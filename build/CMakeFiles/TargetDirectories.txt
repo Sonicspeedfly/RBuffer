@@ -1,0 +1,15 @@
+/root/Buffer/build/CMakeFiles/test.dir
+/root/Buffer/build/CMakeFiles/edit_cache.dir
+/root/Buffer/build/CMakeFiles/rebuild_cache.dir
+/root/Buffer/build/BufferCPP/CMakeFiles/BufferCPP.dir
+/root/Buffer/build/BufferCPP/CMakeFiles/test.dir
+/root/Buffer/build/BufferCPP/CMakeFiles/edit_cache.dir
+/root/Buffer/build/BufferCPP/CMakeFiles/rebuild_cache.dir
+/root/Buffer/build/BufferCPP/Tests/CMakeFiles/TestBufferCPP.dir
+/root/Buffer/build/BufferCPP/Tests/CMakeFiles/test.dir
+/root/Buffer/build/BufferCPP/Tests/CMakeFiles/edit_cache.dir
+/root/Buffer/build/BufferCPP/Tests/CMakeFiles/rebuild_cache.dir
+/root/Buffer/build/RBuffer/CMakeFiles/RBuffer.dir
+/root/Buffer/build/RBuffer/CMakeFiles/test.dir
+/root/Buffer/build/RBuffer/CMakeFiles/edit_cache.dir
+/root/Buffer/build/RBuffer/CMakeFiles/rebuild_cache.dir

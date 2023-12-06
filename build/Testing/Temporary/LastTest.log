@@ -1,0 +1,18 @@
+Start testing: Dec 03 21:19 MSK
+----------------------------------------------------------
+1/1 Testing: TestBufferCPP
+1/1 Test: TestBufferCPP
+Command: "/root/Buffer/build/BufferCPP/Tests/TestBufferCPP"
+Directory: /root/Buffer/build/BufferCPP/Tests
+"TestBufferCPP" start time: Dec 03 21:19 MSK
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TestBufferCPP" end time: Dec 03 21:19 MSK
+"TestBufferCPP" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 03 21:19 MSK

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/TestBufferCPP.dir/buffer.cpp.o -o TestBufferCPP  ../libBufferCPP.a 

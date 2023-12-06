@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/RBuffer.dir/rBuffer.cpp.o -o RBuffer  ../BufferCPP/libBufferCPP.a 

@@ -21,7 +21,7 @@ int main()
             if(cin>>a) {
                 setRBuffer(rBuffer, i, a);
             } else {
-
+                isError = true;
             }
         }
     } else {
@@ -30,8 +30,7 @@ int main()
 
     if(!isError) {
         menu(rBuffer);
-    }
-    if(isError) {
+    } else {
         cout<<ERROR_TEXT<<endl;
     }
     return 0;

@@ -31,9 +31,6 @@ int main()
     if(!isError) {
         menu(rBuffer);
     }
-    if(rBuffer != NULL) {
-        cleanRBuffer(rBuffer);
-    }
     if(isError) {
         cout<<ERROR_TEXT<<endl;
     }
@@ -41,7 +38,7 @@ int main()
 }
 
 void menu(ringBuffer *arr) {
-    system("clear");
+    //system("clear");
     int command;
     int a, value, foundV, foundI, t = 0;
     bool isError = false;
@@ -79,7 +76,7 @@ void menu(ringBuffer *arr) {
         } else if (command == 4) {
             cout<<"Введите значение нового элемента: ";
             if(cin>>value) {
-                insertRBuffer(arr, value);
+                arr = insertRBuffer(&arr, value);
                 cout<<"Элемент "<<value<<" был добавлен в кольцевой буфер";
             } else {
                 isError = true;
@@ -87,7 +84,7 @@ void menu(ringBuffer *arr) {
         } else if (command == 5) {
             cout<<"Введите значение элемента, который нужно удалить: ";
             if(cin>>value) {
-                foundI = deleteRBuffer(arr, value);
+                foundI = deleteRBuffer(&arr, value);
                 if(foundI == -1) {
                    cout<<"Элемент "<<value<<" не был найден";
                 } else {
@@ -99,25 +96,32 @@ void menu(ringBuffer *arr) {
         } else if (command == 6) {
             cout<<"Введите значение элемента, который нужно удалить: ";
             if(cin>>value) {
-                int *delInd = indexRBuffers(arr, value, &t);
-                deleteAllRBuffer(arr, value);
+                t = find(arr, value);
+                int *delInd = new int[t];
+                delInd = indexRBuffers(arr, value);
+                deleteAllRBuffer(&arr, value);
                 if(t == 0) {
                      cout<<"Элемент "<<value<<" не был найден";
                 } else {
                     cout<<"Элементы "<<value<<" под индексом ";
-                    for(int i=0; i<t-1; i++) {
+                    for(int i=0; i<t; i++) {
                         cout<<delInd[i]<<" ";
                     }
                     cout<<"были удалёны из кольцевого буфера";
                 }
                 t=0;
+                if(delInd != NULL) {
+                    delete[] delInd;
+                }
             } else {
                 isError = true;
             }
         } else if (command == 7) {
             cout<<"Введите значение элемента, индекс которого нужно вывести: ";
             if(cin>>value) {
-                int *delInd = indexRBuffers(arr, value, &t);
+                t = find(arr, value);
+                int *delInd = new int[t];
+                delInd = indexRBuffers(arr, value);
                 if(t == 0) {
                     cout<<"Элемент "<<value<<" не был найден";
                 } else {
@@ -126,6 +130,9 @@ void menu(ringBuffer *arr) {
                     }
                 }
                 t=0;
+                if(delInd != NULL) {
+                    delete[] delInd;
+                }
             } else {
                 isError = true;
             }
@@ -137,5 +144,8 @@ void menu(ringBuffer *arr) {
         } else {
             cout<<endl;
         }
+    }
+    if(arr != NULL) {
+        cleanRBuffer(arr);
     }
 }

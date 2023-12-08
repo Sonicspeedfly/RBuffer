@@ -52,5 +52,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "BufferCPP/CMakeFiles/BufferCPP.dir/DependInfo.cmake"
   "BufferCPP/Tests/CMakeFiles/TestBufferCPP.dir/DependInfo.cmake"
+  "BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/DependInfo.cmake"
+  "BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/DependInfo.cmake"
+  "BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/DependInfo.cmake"
+  "BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/DependInfo.cmake"
   "RBuffer/CMakeFiles/RBuffer.dir/DependInfo.cmake"
   )

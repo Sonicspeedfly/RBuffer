@@ -153,6 +153,58 @@ TestBufferCPP/fast:
 .PHONY : TestBufferCPP/fast
 
 #=============================================================================
+# Target rules for targets named TestInsertBufferCPP
+
+# Build rule for target.
+TestInsertBufferCPP: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TestInsertBufferCPP
+.PHONY : TestInsertBufferCPP
+
+# fast build rule for target.
+TestInsertBufferCPP/fast:
+	$(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/build
+.PHONY : TestInsertBufferCPP/fast
+
+#=============================================================================
+# Target rules for targets named TestDeleteBufferCPP
+
+# Build rule for target.
+TestDeleteBufferCPP: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TestDeleteBufferCPP
+.PHONY : TestDeleteBufferCPP
+
+# fast build rule for target.
+TestDeleteBufferCPP/fast:
+	$(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/build
+.PHONY : TestDeleteBufferCPP/fast
+
+#=============================================================================
+# Target rules for targets named TestDeleteAllBufferCPP
+
+# Build rule for target.
+TestDeleteAllBufferCPP: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TestDeleteAllBufferCPP
+.PHONY : TestDeleteAllBufferCPP
+
+# fast build rule for target.
+TestDeleteAllBufferCPP/fast:
+	$(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/build
+.PHONY : TestDeleteAllBufferCPP/fast
+
+#=============================================================================
+# Target rules for targets named TestFindBufferCPP
+
+# Build rule for target.
+TestFindBufferCPP: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TestFindBufferCPP
+.PHONY : TestFindBufferCPP
+
+# fast build rule for target.
+TestFindBufferCPP/fast:
+	$(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/build
+.PHONY : TestFindBufferCPP/fast
+
+#=============================================================================
 # Target rules for targets named RBuffer
 
 # Build rule for target.
@@ -177,6 +229,10 @@ help:
 	@echo "... BufferCPP"
 	@echo "... RBuffer"
 	@echo "... TestBufferCPP"
+	@echo "... TestDeleteAllBufferCPP"
+	@echo "... TestDeleteBufferCPP"
+	@echo "... TestFindBufferCPP"
+	@echo "... TestInsertBufferCPP"
 .PHONY : help
 
 

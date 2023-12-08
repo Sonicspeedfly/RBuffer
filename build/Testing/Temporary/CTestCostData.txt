@@ -1,2 +1,6 @@
-TestBufferCPP 19 0.0001497
+TestBufferCPP 25 0.000102612
+TestInsertBufferCPP 1 0.0028195
+TestDeleteBufferCPP 1 0.0027068
+TestDeleteAllBufferCPP 1 0.0039222
+TestFindBufferCPP 1 0.0028856
 ---

@@ -99,6 +99,10 @@ BufferCPP/clean: BufferCPP/Tests/clean
 
 # Recursive "all" directory target.
 BufferCPP/Tests/all: BufferCPP/Tests/CMakeFiles/TestBufferCPP.dir/all
+BufferCPP/Tests/all: BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/all
+BufferCPP/Tests/all: BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/all
+BufferCPP/Tests/all: BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/all
+BufferCPP/Tests/all: BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/all
 .PHONY : BufferCPP/Tests/all
 
 # Recursive "preinstall" directory target.
@@ -107,6 +111,10 @@ BufferCPP/Tests/preinstall:
 
 # Recursive "clean" directory target.
 BufferCPP/Tests/clean: BufferCPP/Tests/CMakeFiles/TestBufferCPP.dir/clean
+BufferCPP/Tests/clean: BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/clean
+BufferCPP/Tests/clean: BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/clean
+BufferCPP/Tests/clean: BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/clean
+BufferCPP/Tests/clean: BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/clean
 .PHONY : BufferCPP/Tests/clean
 
 #=============================================================================
@@ -175,6 +183,110 @@ TestBufferCPP: BufferCPP/Tests/CMakeFiles/TestBufferCPP.dir/rule
 BufferCPP/Tests/CMakeFiles/TestBufferCPP.dir/clean:
 	$(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestBufferCPP.dir/clean
 .PHONY : BufferCPP/Tests/CMakeFiles/TestBufferCPP.dir/clean
+
+#=============================================================================
+# Target rules for target BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir
+
+# All Build rule for target.
+BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/all: BufferCPP/CMakeFiles/BufferCPP.dir/all
+	$(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/depend
+	$(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Buffer/build/CMakeFiles --progress-num=13,14 "Built target TestInsertBufferCPP"
+.PHONY : BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/all
+
+# Build rule for subdir invocation for target.
+BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Buffer/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Buffer/build/CMakeFiles 0
+.PHONY : BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/rule
+
+# Convenience name for target.
+TestInsertBufferCPP: BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/rule
+.PHONY : TestInsertBufferCPP
+
+# clean rule for target.
+BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/clean:
+	$(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/clean
+.PHONY : BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/clean
+
+#=============================================================================
+# Target rules for target BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir
+
+# All Build rule for target.
+BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/all: BufferCPP/CMakeFiles/BufferCPP.dir/all
+	$(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/depend
+	$(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Buffer/build/CMakeFiles --progress-num=9,10 "Built target TestDeleteBufferCPP"
+.PHONY : BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/all
+
+# Build rule for subdir invocation for target.
+BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Buffer/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Buffer/build/CMakeFiles 0
+.PHONY : BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/rule
+
+# Convenience name for target.
+TestDeleteBufferCPP: BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/rule
+.PHONY : TestDeleteBufferCPP
+
+# clean rule for target.
+BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/clean:
+	$(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/clean
+.PHONY : BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/clean
+
+#=============================================================================
+# Target rules for target BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir
+
+# All Build rule for target.
+BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/all: BufferCPP/CMakeFiles/BufferCPP.dir/all
+	$(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/depend
+	$(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Buffer/build/CMakeFiles --progress-num=7,8 "Built target TestDeleteAllBufferCPP"
+.PHONY : BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/all
+
+# Build rule for subdir invocation for target.
+BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Buffer/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Buffer/build/CMakeFiles 0
+.PHONY : BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/rule
+
+# Convenience name for target.
+TestDeleteAllBufferCPP: BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/rule
+.PHONY : TestDeleteAllBufferCPP
+
+# clean rule for target.
+BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/clean:
+	$(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/clean
+.PHONY : BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/clean
+
+#=============================================================================
+# Target rules for target BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir
+
+# All Build rule for target.
+BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/all: BufferCPP/CMakeFiles/BufferCPP.dir/all
+	$(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/depend
+	$(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/root/Buffer/build/CMakeFiles --progress-num=11,12 "Built target TestFindBufferCPP"
+.PHONY : BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/all
+
+# Build rule for subdir invocation for target.
+BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Buffer/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/Buffer/build/CMakeFiles 0
+.PHONY : BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/rule
+
+# Convenience name for target.
+TestFindBufferCPP: BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/rule
+.PHONY : TestFindBufferCPP
+
+# clean rule for target.
+BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/clean:
+	$(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/clean
+.PHONY : BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/clean
 
 #=============================================================================
 # Target rules for target RBuffer/CMakeFiles/RBuffer.dir

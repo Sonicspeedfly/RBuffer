@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/TestDeleteAllBufferCPP.dir/deleteAll.cpp.o -o TestDeleteAllBufferCPP  ../libBufferCPP.a 

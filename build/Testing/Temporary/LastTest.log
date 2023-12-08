@@ -1,18 +1,78 @@
-Start testing: Dec 03 21:19 MSK
+Start testing: Dec 08 16:52 MSK
 ----------------------------------------------------------
-1/1 Testing: TestBufferCPP
-1/1 Test: TestBufferCPP
+1/5 Testing: TestBufferCPP
+1/5 Test: TestBufferCPP
 Command: "/root/Buffer/build/BufferCPP/Tests/TestBufferCPP"
 Directory: /root/Buffer/build/BufferCPP/Tests
-"TestBufferCPP" start time: Dec 03 21:19 MSK
+"TestBufferCPP" start time: Dec 08 16:52 MSK
 Output:
 ----------------------------------------------------------
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"TestBufferCPP" end time: Dec 03 21:19 MSK
+"TestBufferCPP" end time: Dec 08 16:52 MSK
 "TestBufferCPP" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Dec 03 21:19 MSK
+2/5 Testing: TestInsertBufferCPP
+2/5 Test: TestInsertBufferCPP
+Command: "/root/Buffer/build/BufferCPP/Tests/TestInsertBufferCPP"
+Directory: /root/Buffer/build/BufferCPP/Tests
+"TestInsertBufferCPP" start time: Dec 08 16:52 MSK
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TestInsertBufferCPP" end time: Dec 08 16:52 MSK
+"TestInsertBufferCPP" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/5 Testing: TestDeleteBufferCPP
+3/5 Test: TestDeleteBufferCPP
+Command: "/root/Buffer/build/BufferCPP/Tests/TestDeleteBufferCPP"
+Directory: /root/Buffer/build/BufferCPP/Tests
+"TestDeleteBufferCPP" start time: Dec 08 16:52 MSK
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TestDeleteBufferCPP" end time: Dec 08 16:52 MSK
+"TestDeleteBufferCPP" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/5 Testing: TestDeleteAllBufferCPP
+4/5 Test: TestDeleteAllBufferCPP
+Command: "/root/Buffer/build/BufferCPP/Tests/TestDeleteAllBufferCPP"
+Directory: /root/Buffer/build/BufferCPP/Tests
+"TestDeleteAllBufferCPP" start time: Dec 08 16:52 MSK
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TestDeleteAllBufferCPP" end time: Dec 08 16:52 MSK
+"TestDeleteAllBufferCPP" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/5 Testing: TestFindBufferCPP
+5/5 Test: TestFindBufferCPP
+Command: "/root/Buffer/build/BufferCPP/Tests/TestBufferCPP"
+Directory: /root/Buffer/build/BufferCPP/Tests
+"TestFindBufferCPP" start time: Dec 08 16:52 MSK
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TestFindBufferCPP" end time: Dec 08 16:52 MSK
+"TestFindBufferCPP" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 08 16:52 MSK

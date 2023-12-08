@@ -140,6 +140,62 @@ TestBufferCPP/fast:
 	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestBufferCPP.dir/build
 .PHONY : TestBufferCPP/fast
 
+# Convenience name for target.
+BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/rule:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/rule
+.PHONY : BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/rule
+
+# Convenience name for target.
+TestInsertBufferCPP: BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/rule
+.PHONY : TestInsertBufferCPP
+
+# fast build rule for target.
+TestInsertBufferCPP/fast:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/build
+.PHONY : TestInsertBufferCPP/fast
+
+# Convenience name for target.
+BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/rule:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/rule
+.PHONY : BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/rule
+
+# Convenience name for target.
+TestDeleteBufferCPP: BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/rule
+.PHONY : TestDeleteBufferCPP
+
+# fast build rule for target.
+TestDeleteBufferCPP/fast:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/build
+.PHONY : TestDeleteBufferCPP/fast
+
+# Convenience name for target.
+BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/rule:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/rule
+.PHONY : BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/rule
+
+# Convenience name for target.
+TestDeleteAllBufferCPP: BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/rule
+.PHONY : TestDeleteAllBufferCPP
+
+# fast build rule for target.
+TestDeleteAllBufferCPP/fast:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/build
+.PHONY : TestDeleteAllBufferCPP/fast
+
+# Convenience name for target.
+BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/rule:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/rule
+.PHONY : BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/rule
+
+# Convenience name for target.
+TestFindBufferCPP: BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/rule
+.PHONY : TestFindBufferCPP
+
+# fast build rule for target.
+TestFindBufferCPP/fast:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/build
+.PHONY : TestFindBufferCPP/fast
+
 buffer.o: buffer.cpp.o
 .PHONY : buffer.o
 
@@ -164,6 +220,102 @@ buffer.cpp.s:
 	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestBufferCPP.dir/buffer.cpp.s
 .PHONY : buffer.cpp.s
 
+delete.o: delete.cpp.o
+.PHONY : delete.o
+
+# target to build an object file
+delete.cpp.o:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/delete.cpp.o
+.PHONY : delete.cpp.o
+
+delete.i: delete.cpp.i
+.PHONY : delete.i
+
+# target to preprocess a source file
+delete.cpp.i:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/delete.cpp.i
+.PHONY : delete.cpp.i
+
+delete.s: delete.cpp.s
+.PHONY : delete.s
+
+# target to generate assembly for a file
+delete.cpp.s:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestDeleteBufferCPP.dir/delete.cpp.s
+.PHONY : delete.cpp.s
+
+deleteAll.o: deleteAll.cpp.o
+.PHONY : deleteAll.o
+
+# target to build an object file
+deleteAll.cpp.o:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/deleteAll.cpp.o
+.PHONY : deleteAll.cpp.o
+
+deleteAll.i: deleteAll.cpp.i
+.PHONY : deleteAll.i
+
+# target to preprocess a source file
+deleteAll.cpp.i:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/deleteAll.cpp.i
+.PHONY : deleteAll.cpp.i
+
+deleteAll.s: deleteAll.cpp.s
+.PHONY : deleteAll.s
+
+# target to generate assembly for a file
+deleteAll.cpp.s:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestDeleteAllBufferCPP.dir/deleteAll.cpp.s
+.PHONY : deleteAll.cpp.s
+
+find.o: find.cpp.o
+.PHONY : find.o
+
+# target to build an object file
+find.cpp.o:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/find.cpp.o
+.PHONY : find.cpp.o
+
+find.i: find.cpp.i
+.PHONY : find.i
+
+# target to preprocess a source file
+find.cpp.i:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/find.cpp.i
+.PHONY : find.cpp.i
+
+find.s: find.cpp.s
+.PHONY : find.s
+
+# target to generate assembly for a file
+find.cpp.s:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestFindBufferCPP.dir/find.cpp.s
+.PHONY : find.cpp.s
+
+insert.o: insert.cpp.o
+.PHONY : insert.o
+
+# target to build an object file
+insert.cpp.o:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/insert.cpp.o
+.PHONY : insert.cpp.o
+
+insert.i: insert.cpp.i
+.PHONY : insert.i
+
+# target to preprocess a source file
+insert.cpp.i:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/insert.cpp.i
+.PHONY : insert.cpp.i
+
+insert.s: insert.cpp.s
+.PHONY : insert.s
+
+# target to generate assembly for a file
+insert.cpp.s:
+	cd /root/Buffer/build && $(MAKE) $(MAKESILENT) -f BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/build.make BufferCPP/Tests/CMakeFiles/TestInsertBufferCPP.dir/insert.cpp.s
+.PHONY : insert.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -174,9 +326,25 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... TestBufferCPP"
+	@echo "... TestDeleteAllBufferCPP"
+	@echo "... TestDeleteBufferCPP"
+	@echo "... TestFindBufferCPP"
+	@echo "... TestInsertBufferCPP"
 	@echo "... buffer.o"
 	@echo "... buffer.i"
 	@echo "... buffer.s"
+	@echo "... delete.o"
+	@echo "... delete.i"
+	@echo "... delete.s"
+	@echo "... deleteAll.o"
+	@echo "... deleteAll.i"
+	@echo "... deleteAll.s"
+	@echo "... find.o"
+	@echo "... find.i"
+	@echo "... find.s"
+	@echo "... insert.o"
+	@echo "... insert.i"
+	@echo "... insert.s"
 .PHONY : help
 
 

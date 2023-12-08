@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/TestFindBufferCPP.dir/find.cpp.o -o TestFindBufferCPP  ../libBufferCPP.a 

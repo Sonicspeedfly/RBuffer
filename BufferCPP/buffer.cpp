@@ -3,7 +3,7 @@
 
 struct ringBuffer {
     int sizeBuffer;
-    int value;
+    int *value;
 };
 
 int ost(int a, int b){
@@ -26,7 +26,10 @@ int ost(int a, int b){
 
 
 ringBuffer *initRBuffer(int sizeBuffer) {
-    return new ringBuffer{sizeBuffer, 0};
+    ringBuffer *buf = new ringBuffer();
+    buf->sizeBuffer = sizeBuffer;
+    buf->value = new int[sizeBuffer];
+    return buf;
 }
 
 int sizeRBuffer(ringBuffer *arr) {
@@ -35,20 +38,34 @@ int sizeRBuffer(ringBuffer *arr) {
 
 
 int getRBuffer(ringBuffer *arr, int index) {
-    return arr[ost(index,sizeRBuffer(arr))].value;
+    if (index >= 0) {
+        return arr->value[ost(index,sizeRBuffer(arr))];
+    } else {
+        return -1;
+    }
 }
 
 void setRBuffer(ringBuffer *arr, int index, int value) {
-    arr[ost(index,sizeRBuffer(arr))].value = value;
+    if (index >= 0) {
+        arr->value[ost(index,sizeRBuffer(arr))] = value;
+    }
 }
 
-void insertRBuffer(ringBuffer *arr, int value) {
-    arr[sizeRBuffer(arr)].value = value;
-    (*arr).sizeBuffer = sizeRBuffer(arr) + 1;
+ringBuffer *insertRBuffer(ringBuffer **arr, int value) {
+    ringBuffer *buf = new ringBuffer();
+    buf->sizeBuffer = sizeRBuffer(*arr) + 1;
+    buf->value = new int[sizeRBuffer(*arr) + 1];
+    for(int i=0; i<sizeRBuffer(*arr); i++) {
+        setRBuffer(buf, i, getRBuffer(*arr, i));
+    }
+    cleanRBuffer(*arr);
+    setRBuffer(buf, sizeRBuffer(buf) - 1, value);
+    return buf;
 }
 
 void cleanRBuffer(ringBuffer *arr) {
-    delete[] arr;
+    delete[] arr->value;
+    delete arr;
 }
 
 int indexRBuffer(ringBuffer *arr, int value) {
@@ -61,16 +78,21 @@ int indexRBuffer(ringBuffer *arr, int value) {
     return result;
 }
 
-int *indexRBuffers(ringBuffer *arr, int value, int *t) {
-    (*t) = 0;
+int find(ringBuffer *arr, int value) {
+    int t = 0;
     for(int i = 0; i < sizeRBuffer(arr); i++) {
         if(getRBuffer(arr, i) == value) {
-            (*t) = (*t) + 1;
+            t++;
         }
     } 
-    std::cout << (*t);
-    if((*t) != 0) {
-        int *result = new int(*t);
+    return t;
+}
+
+int *indexRBuffers(ringBuffer *arr, int value) {
+    int t = find(arr, value);
+    //std::cout << t << std::endl;
+    int *result = new int[t];
+    if(t != 0) {
         int sch = 0;
         for(int i = 0; i < sizeRBuffer(arr); i++) {
             if(getRBuffer(arr, i) == value) {
@@ -78,37 +100,48 @@ int *indexRBuffers(ringBuffer *arr, int value, int *t) {
                 sch++;
             }
         }
-        for(int i = 0; i < (*t); i++) {
-            std::cout << result[i] << " ";
-        }
-        return result;
+        // for(int i = 0; i < t; i++) {
+        //     std::cout << result[i] << " ";
+        // }
     }
-    
-    return NULL;
+    return result;
 }
 
-int deleteRBuffer(ringBuffer *arr, int value) {
-    int dataIndex = indexRBuffer(arr, value);
+int deleteRBuffer(ringBuffer **arr, int value) {
+    int dataIndex = indexRBuffer(*arr, value);
     if (dataIndex != -1) {
-        for (int i = dataIndex; i < sizeRBuffer(arr) - 1; i++) {
-            arr[i].value = arr[i + 1].value;
+        ringBuffer *buf = new ringBuffer();
+        buf->sizeBuffer = sizeRBuffer(*arr) - 1;
+        buf->value = new int[sizeRBuffer(*arr) - 1];
+        for (int i = 0; i < sizeRBuffer(*arr) - 1; i++) {
+            if(i >= dataIndex) {
+                setRBuffer(buf, i, getRBuffer(*arr, i+1));
+            } else {
+                setRBuffer(buf, i, getRBuffer(*arr, i));
+            }
         }
-        arr[sizeRBuffer(arr) - 1].value = 0;
-        (*arr).sizeBuffer = sizeRBuffer(arr) - 1;
+        cleanRBuffer(*arr);
+        *arr = new ringBuffer();
+        (*arr)->sizeBuffer = sizeRBuffer(buf);
+        (*arr)->value = new int[sizeRBuffer(buf)];
+        for (int i = 0; i < sizeRBuffer(buf); i++) {
+            setRBuffer(*arr, i, getRBuffer(buf, i));
+        }
+        cleanRBuffer(buf);
     }
 
     return dataIndex;
 }
 
-void deleteAllRBuffer(ringBuffer *arr, int value) {
-    int dataIndex = indexRBuffer(arr, value);
-    while (dataIndex != -1) {
-        for (int i = dataIndex; i < sizeRBuffer(arr) - 1; i++) {
-            arr[i].value = arr[i + 1].value;
-        }
-        arr[sizeRBuffer(arr) - 1].value = 0;
-        (*arr).sizeBuffer = sizeRBuffer(arr) - 1;
-
-        dataIndex = indexRBuffer(arr, value);
+int deleteAllRBuffer(ringBuffer **arr, int value) {
+    int dataIndex = indexRBuffer(*arr, value);
+    if(dataIndex == -1) {
+        return dataIndex;
     }
+    while (dataIndex != -1) {
+        deleteRBuffer(arr, value);
+        dataIndex = indexRBuffer(*arr, value);
+    }
+
+    return 1;
 }
